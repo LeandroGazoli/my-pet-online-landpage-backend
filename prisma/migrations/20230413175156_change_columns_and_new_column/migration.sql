@@ -1,0 +1,5 @@
+-- AlterTable
+ALTER TABLE "survey" ADD COLUMN     "texte" TEXT,
+ALTER COLUMN "experience" DROP NOT NULL,
+ALTER COLUMN "userAnjo" DROP NOT NULL,
+ALTER COLUMN "value" DROP NOT NULL;

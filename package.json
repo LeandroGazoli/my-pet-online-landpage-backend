@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node src/server.ts",
     "dev": "ts-node-dev --transpile-only src/server.ts",
-    "vercel-build": "prisma generate && prisma migrate deploy && next build",
-    "dev-teste-vercel-build": "prisma migrate dev"
+    "2-vercel-build": "prisma generate && prisma migrate deploy && next build",
+    "vercel-build": "prisma migrate dev"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",

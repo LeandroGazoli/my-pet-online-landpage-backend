@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node src/server.ts",
+    "start": "node build/server.js",
     "build": "tsc",
     "dev": "ts-node-dev --transpile-only src/server.ts",
     "vercel-build": "prisma migrate deploy"

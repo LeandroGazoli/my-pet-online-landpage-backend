@@ -9,6 +9,8 @@ class CreatePersonagemController {
 
     const response = await createPersonagemService.execute({ name });
 
+    console.log(response);
+
     res.json(response);
   }
 }

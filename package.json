@@ -7,8 +7,7 @@
     "start": "node src/server.ts",
     "build": "tsc",
     "dev": "ts-node-dev --transpile-only src/server.ts",
-    "2-vercel-build": "prisma generate && prisma migrate deploy && next build",
-    "vercel-build": "prisma migrate dev"
+    "vercel-build": "prisma migrate deploy"
   },
   "devDependencies": {
     "@types/cors": "^2.8.13",

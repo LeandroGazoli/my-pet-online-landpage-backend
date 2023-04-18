@@ -7,10 +7,11 @@ interface SurveyRequest {
   iniciativa?: string;
   anjo?: string;
   valor?: string;
+  personName?: string;
 }
 
 class CreateSurveyService {
-  async execute({ name, email, telefone, iniciativa, anjo, valor }: SurveyRequest) {
+  async execute({ name, email, telefone, iniciativa, anjo, valor, personName }: SurveyRequest) {
     const userAlreadyExists = await prismaClient.survey.findFirst({
       where: { email: email },
     });
@@ -28,6 +29,7 @@ class CreateSurveyService {
           experience: iniciativa,
           userAnjo: anjo,
           value: valor,
+          personName: personName,
         },
       });
 

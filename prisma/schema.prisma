@@ -20,6 +20,7 @@ model Survey {
   experience String?
   userAnjo String?
   value String?
+  personName String?
   created_at DateTime? @default(now())
   updated_at DateTime? @default(now())
 
